@@ -24,7 +24,7 @@ export function ServicesPage() {
             {WELCOME_TABS.map((t, i) => (
               <Reveal key={t.id} delay={i * 0.08}>
                 <button
-                  onClick={() => navigate("contact" as never)}
+                  onClick={() => navigate("rfq" as never)}
                   className="group block w-full overflow-hidden text-left"
                 >
                   <div className="relative overflow-hidden">

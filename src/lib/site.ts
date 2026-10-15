@@ -28,7 +28,7 @@ export const NAV_LINKS = [
   { label: "Contact", page: "contact" },
 ] as const;
 
-export type PageId = (typeof NAV_LINKS)[number]["page"] | "blogPost";
+export type PageId = (typeof NAV_LINKS)[number]["page"] | "blogPost" | "rfq";
 
 export const HERO_SLIDES = [
   {
@@ -36,7 +36,7 @@ export const HERO_SLIDES = [
     eyebrow: "Columbus, Ohio",
     title: "Safe wiring. Smart homes. Done right the first time.",
     text: "From a flickering light to a full rewire, our licensed crew handles the job cleanly, on schedule, and up to code.",
-    primaryCta: { label: "Request a Quote", page: "contact" as const },
+    primaryCta: { label: "Request a Quote", page: "rfq" as const },
     secondaryCta: { label: "Our Services", page: "services" as const },
   },
   {
@@ -423,14 +423,19 @@ export function mailtoLead(
   const lines: string[] = [];
   for (const [key, value] of Object.entries(data)) {
     if (typeof value === "string" && value.trim()) {
-      const label = key.charAt(0).toUpperCase() + key.slice(1);
+      // propertyType -> "Property Type" so the email reads naturally
+      const label = key
+        .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+        .replace(/^./, (c) => c.toUpperCase());
       lines.push(`${label}: ${value.trim()}`);
     }
   }
   const subject =
-    source === "appointment"
-      ? "Appointment request from the website"
-      : "Website message";
+    source === "rfq"
+      ? "Quote request from the website"
+      : source === "appointment"
+        ? "Appointment request from the website"
+        : "Website message";
   const body = lines.join("\n\n");
   window.location.href = `mailto:${BRAND.email}?subject=${encodeURIComponent(
     subject

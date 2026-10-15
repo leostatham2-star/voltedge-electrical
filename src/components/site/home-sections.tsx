@@ -112,10 +112,10 @@ export function CtaStrip() {
           </p>
         </div>
         <button
-          onClick={() => navigate("contact" as never)}
+          onClick={() => navigate("rfq" as never)}
           className="group inline-flex shrink-0 items-center gap-2.5 bg-navy-900 px-8 py-4 font-heading text-base font-semibold uppercase tracking-wider text-white transition-all hover:bg-navy-800"
         >
-          Request Service
+          Request a Quote
           <ArrowRight className="h-4.5 w-4.5 transition-transform group-hover:translate-x-1" />
         </button>
       </div>
@@ -171,6 +171,7 @@ export function ServicesGrid() {
 /* ---------------- Appointment form ---------------- */
 
 function AppointmentForm() {
+  const { navigate } = useNav();
   const [status, setStatus] = useState<
     "idle" | "sending" | "done" | "mailto" | "error"
   >("idle");
@@ -287,6 +288,16 @@ function AppointmentForm() {
           </>
         )}
       </button>
+      <p className="mt-5 text-sm text-white/55">
+        Planning a bigger project and want a written price first?{" "}
+        <button
+          type="button"
+          onClick={() => navigate("rfq" as never)}
+          className="font-semibold text-brand-400 underline decoration-brand-500/50 underline-offset-4 transition-colors hover:text-brand-300"
+        >
+          Request a Quote instead
+        </button>
+      </p>
     </form>
   );
 }

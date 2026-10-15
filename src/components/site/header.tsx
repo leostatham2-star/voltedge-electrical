@@ -102,10 +102,10 @@ export function Header() {
 
           <div className="flex items-center gap-3">
             <button
-              onClick={() => go("contact")}
+              onClick={() => go("rfq")}
               className="hidden items-center gap-2 bg-brand-500 px-6 py-3 font-heading text-[0.95rem] font-semibold uppercase tracking-wider text-navy-900 transition-all hover:bg-brand-400 hover:shadow-lg hover:shadow-brand-500/25 sm:inline-flex"
             >
-              Request Service
+              Request a Quote
               <ChevronRight className="h-4 w-4" />
             </button>
             <button
@@ -159,10 +159,10 @@ export function Header() {
                 <Mail className="h-4 w-4 text-brand-500" /> {BRAND.email}
               </a>
               <button
-                onClick={() => go("contact")}
+                onClick={() => go("rfq")}
                 className="mt-3 w-full bg-brand-500 px-5 py-3 font-heading text-sm font-semibold uppercase tracking-wider text-navy-900"
               >
-                Request Service
+                Request a Quote
               </button>
             </div>
           </div>

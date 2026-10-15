@@ -1,9 +1,10 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Phone, Mail, MapPin, Clock, CheckCircle2, Loader2, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, CheckCircle2, Loader2, Send, FileText, ArrowRight } from "lucide-react";
 import { BRAND, FAQS, mailtoLead } from "@/lib/site";
 import { PageBanner, SectionHeading, Reveal } from "../shared";
+import { useNav } from "../nav-context";
 
 const CONTACT_CARDS = [
   {
@@ -146,6 +147,7 @@ function ContactForm() {
 }
 
 export function ContactPage() {
+  const { navigate } = useNav();
   return (
     <>
       <PageBanner title="Contact Us" crumb="Contact" image="/images/service-banner.jpg" />
@@ -187,6 +189,33 @@ export function ContactPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* RFQ callout */}
+      <section className="border-y border-slate-100 bg-white py-10">
+        <div className="container-site flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
+          <div className="flex items-start gap-4">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-navy-800 text-brand-500">
+              <FileText className="h-5.5 w-5.5" />
+            </span>
+            <div>
+              <h2 className="font-heading text-xl font-bold text-navy-800 sm:text-2xl">
+                Planning a bigger project?
+              </h2>
+              <p className="mt-1 max-w-xl text-[0.95rem] text-slate-500">
+                Rewires, panel upgrades, buildouts, EV chargers. Skip the back and
+                forth and get a written, fixed-price quote within two business days.
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => navigate("rfq" as never)}
+            className="group inline-flex shrink-0 items-center gap-2.5 bg-navy-900 px-8 py-4 font-heading text-base font-semibold uppercase tracking-wider text-white transition-colors hover:bg-brand-500 hover:text-navy-900"
+          >
+            Request a Quote
+            <ArrowRight className="h-4.5 w-4.5 transition-transform group-hover:translate-x-1" />
+          </button>
         </div>
       </section>
 

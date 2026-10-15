@@ -10,9 +10,10 @@ import { ServicesPage } from "@/components/site/pages/services";
 import { ProjectsPage } from "@/components/site/pages/projects";
 import { BlogPage, BlogPostPage } from "@/components/site/pages/blog";
 import { ContactPage } from "@/components/site/pages/contact";
+import { RfqPage } from "@/components/site/pages/rfq";
 import type { PageId } from "@/lib/site";
 
-const KNOWN_PAGES: PageId[] = ["home", "about", "services", "projects", "blog", "blogPost", "contact"];
+const KNOWN_PAGES: PageId[] = ["home", "about", "services", "projects", "blog", "blogPost", "contact", "rfq"];
 
 function subscribe(onChange: () => void) {
   window.addEventListener("hashchange", onChange);
@@ -63,6 +64,8 @@ export default function Site() {
         return <BlogPostPage slug={postSlug ?? ""} />;
       case "contact":
         return <ContactPage />;
+      case "rfq":
+        return <RfqPage />;
       default:
         return <HomePage />;
     }

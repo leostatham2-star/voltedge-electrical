@@ -65,6 +65,14 @@ export function Footer() {
           </h4>
           <span className="mt-2 block h-0.5 w-9 bg-brand-500" />
           <ul className="mt-5 space-y-2.5 text-[0.95rem]">
+            <li>
+              <button
+                onClick={() => navigate("rfq" as never)}
+                className="font-semibold text-brand-400 transition-all hover:translate-x-1 hover:text-brand-300"
+              >
+                Request a Quote
+              </button>
+            </li>
             {NAV_LINKS.map((link) => (
               <li key={link.page}>
                 <button
