@@ -1,0 +1,11 @@
+// Deploys the static site (./out) to Cloudflare as a Workers static-assets project.
+// Build first with: npm run build:static   then deploy with: npx wrangler deploy
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "voltedge-electrical",
+  "compatibility_date": "2026-10-12",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "single-page-application"
+  }
+}

@@ -35,22 +35,30 @@ The database is created and migrated automatically in the sandbox. To push the P
 npm run db:push
 ```
 
-## First deploy to Cloudflare Pages
+## First deploy to Cloudflare
 
 1. Push this repository to GitHub (see the next section).
-2. In Cloudflare, go to **Workers & Pages > Create > Pages > Connect to Git** and pick the repo.
-3. Use these build settings:
+2. In Cloudflare, go to **Workers & Pages > Create > Import an existing Git repository** and pick the repo.
+3. In the build settings, set the **framework preset to None** first, then:
 
    | Setting | Value |
    |---------|-------|
    | Framework preset | None |
    | Build command | `npm run build:static` |
-   | Build output directory | `out` |
-   | Environment variable | `NODE_VERSION` = `22` |
+   | Deploy command | `npx wrangler deploy` |
 
+   Leave the default install command as is. Do not pick the Next.js preset: that route tries to run the whole app as a Cloudflare Worker and fails (see troubleshooting below).
 4. Deploy. Every push to the main branch now redeploys the site automatically.
 
-After the first deploy, add your custom domain under **Pages project > Custom domains**. Cloudflare handles the SSL certificate.
+The deploy reads `wrangler.jsonc` from the repo, which serves the `out/` folder as static assets with single page application fallback. Nothing server side runs on Cloudflare, and the forms fall back to a prefilled email, so no database or bindings are needed.
+
+After the first deploy, add your custom domain under the project's **Domains & routes** settings. Cloudflare handles the SSL certificate.
+
+## Troubleshooting deploys
+
+**Error 10143, "Service binding 'WORKER_SELF_REFERENCE' references Worker ... which was not found"**
+
+This happens when the framework preset is left on Next.js. Cloudflare then runs the OpenNext adapter, which generates a Worker config named after the package (`nextjs-tailwind-shadcn-ts`) while the actual project is named `voltedge-electrical`, so the deploy is rejected. The build itself succeeds, which makes this extra confusing. Fix: open the project's **Settings > Build > Build configuration**, change the framework preset to None, set the build command to `npm run build:static` and the deploy command to `npx wrangler deploy`, then retry the deployment. This repo already contains the correct `wrangler.jsonc`, so no other changes are needed.
 
 ## Pushing this repository to GitHub
 

@@ -1,0 +1,590 @@
+     1→2026-10-15T08:41:05.303Z        Initializing build environment...
+     2→2026-10-15T08:41:07.829Z        Success: Finished initializing build environment
+     3→2026-10-15T08:41:08.922Z        Cloning repository...
+     4→2026-10-15T08:41:10.891Z        Restoring from dependencies cache
+     5→2026-10-15T08:41:10.894Z        Restoring from build output cache
+     6→2026-10-15T08:41:11.747Z        Detected the following tools from environment: nodejs@22.23.3, bun@1.2.15
+     7→2026-10-15T08:41:11.748Z        Installing nodejs 22.23.3
+     8→2026-10-15T08:41:16.812Z        Installing project dependencies: bun install --frozen-lockfile
+     9→2026-10-15T08:41:17.126Z        bun install v1.2.15 (df017990)
+    10→2026-10-15T08:41:34.617Z        
+    11→2026-10-15T08:41:34.617Z        + @tailwindcss/postcss@4.1.18
+    12→2026-10-15T08:41:34.617Z        + @types/react@19.2.8
+    13→2026-10-15T08:41:34.617Z        + @types/react-dom@19.2.3
+    14→2026-10-15T08:41:34.617Z        + bun-types@1.3.6
+    15→2026-10-15T08:41:34.617Z        + eslint@9.39.2
+    16→2026-10-15T08:41:34.618Z        + eslint-config-next@16.1.3
+    17→2026-10-15T08:41:34.618Z        + tailwindcss@4.1.18
+    18→2026-10-15T08:41:34.618Z        + tw-animate-css@1.4.0
+    19→2026-10-15T08:41:34.618Z        + typescript@5.9.3
+    20→2026-10-15T08:41:34.618Z        + @dnd-kit/core@6.3.1
+    21→2026-10-15T08:41:34.618Z        + @dnd-kit/sortable@10.0.0
+    22→2026-10-15T08:41:34.618Z        + @dnd-kit/utilities@3.2.2
+    23→2026-10-15T08:41:34.618Z        + @hookform/resolvers@5.2.2
+    24→2026-10-15T08:41:34.618Z        + @mdxeditor/editor@3.52.3
+    25→2026-10-15T08:41:34.618Z        + @prisma/client@6.19.2
+    26→2026-10-15T08:41:34.619Z        + @radix-ui/react-accordion@1.2.12
+    27→2026-10-15T08:41:34.619Z        + @radix-ui/react-alert-dialog@1.1.15
+    28→2026-10-15T08:41:34.619Z        + @radix-ui/react-aspect-ratio@1.1.8
+    29→2026-10-15T08:41:34.619Z        + @radix-ui/react-avatar@1.1.11
+    30→2026-10-15T08:41:34.619Z        + @radix-ui/react-checkbox@1.3.3
+    31→2026-10-15T08:41:34.619Z        + @radix-ui/react-collapsible@1.1.12
+    32→2026-10-15T08:41:34.619Z        + @radix-ui/react-context-menu@2.2.16
+    33→2026-10-15T08:41:34.620Z        + @radix-ui/react-dialog@1.1.15
+    34→2026-10-15T08:41:34.620Z        + @radix-ui/react-dropdown-menu@2.1.16
+    35→2026-10-15T08:41:34.620Z        + @radix-ui/react-hover-card@1.1.15
+    36→2026-10-15T08:41:34.620Z        + @radix-ui/react-label@2.1.8
+    37→2026-10-15T08:41:34.620Z        + @radix-ui/react-menubar@1.1.16
+    38→2026-10-15T08:41:34.620Z        + @radix-ui/react-navigation-menu@1.2.14
+    39→2026-10-15T08:41:34.620Z        + @radix-ui/react-popover@1.1.15
+    40→2026-10-15T08:41:34.620Z        + @radix-ui/react-progress@1.1.8
+    41→2026-10-15T08:41:34.620Z        + @radix-ui/react-radio-group@1.3.8
+    42→2026-10-15T08:41:34.621Z        + @radix-ui/react-scroll-area@1.2.10
+    43→2026-10-15T08:41:34.621Z        + @radix-ui/react-select@2.2.6
+    44→2026-10-15T08:41:34.621Z        + @radix-ui/react-separator@1.1.8
+    45→2026-10-15T08:41:34.621Z        + @radix-ui/react-slider@1.3.6
+    46→2026-10-15T08:41:34.621Z        + @radix-ui/react-slot@1.2.4
+    47→2026-10-15T08:41:34.621Z        + @radix-ui/react-switch@1.2.6
+    48→2026-10-15T08:41:34.621Z        + @radix-ui/react-tabs@1.1.13
+    49→2026-10-15T08:41:34.621Z        + @radix-ui/react-toast@1.2.15
+    50→2026-10-15T08:41:34.621Z        + @radix-ui/react-toggle@1.1.10
+    51→2026-10-15T08:41:34.621Z        + @radix-ui/react-toggle-group@1.1.11
+    52→2026-10-15T08:41:34.622Z        + @radix-ui/react-tooltip@1.2.8
+    53→2026-10-15T08:41:34.622Z        + @reactuses/core@6.1.9
+    54→2026-10-15T08:41:34.622Z        + @tanstack/react-query@5.90.19
+    55→2026-10-15T08:41:34.622Z        + @tanstack/react-table@8.21.3
+    56→2026-10-15T08:41:34.622Z        + class-variance-authority@0.7.1
+    57→2026-10-15T08:41:34.622Z        + clsx@2.1.1
+    58→2026-10-15T08:41:34.622Z        + cmdk@1.1.1
+    59→2026-10-15T08:41:34.623Z        + date-fns@4.1.0
+    60→2026-10-15T08:41:34.623Z        + embla-carousel-react@8.6.0
+    61→2026-10-15T08:41:34.623Z        + framer-motion@12.26.2
+    62→2026-10-15T08:41:34.623Z        + input-otp@1.4.2
+    63→2026-10-15T08:41:34.623Z        + lucide-react@0.525.0
+    64→2026-10-15T08:41:34.623Z        + next@16.1.3
+    65→2026-10-15T08:41:34.623Z        + next-auth@4.24.13
+    66→2026-10-15T08:41:34.625Z        + next-intl@4.7.0
+    67→2026-10-15T08:41:34.625Z        + next-themes@0.4.6
+    68→2026-10-15T08:41:34.625Z        + prisma@6.19.2
+    69→2026-10-15T08:41:34.625Z        + react@19.2.3
+    70→2026-10-15T08:41:34.625Z        + react-day-picker@9.13.0
+    71→2026-10-15T08:41:34.625Z        + react-dom@19.2.3
+    72→2026-10-15T08:41:34.627Z        + react-hook-form@7.71.1
+    73→2026-10-15T08:41:34.627Z        + react-markdown@10.1.0
+    74→2026-10-15T08:41:34.627Z        + react-resizable-panels@3.0.6
+    75→2026-10-15T08:41:34.627Z        + react-syntax-highlighter@15.6.6
+    76→2026-10-15T08:41:34.627Z        + recharts@2.15.4
+    77→2026-10-15T08:41:34.627Z        + sharp@0.34.5
+    78→2026-10-15T08:41:34.628Z        + sonner@2.0.7
+    79→2026-10-15T08:41:34.628Z        + tailwind-merge@3.4.0
+    80→2026-10-15T08:41:34.628Z        + tailwindcss-animate@1.0.7
+    81→2026-10-15T08:41:34.628Z        + uuid@11.1.0
+    82→2026-10-15T08:41:34.628Z        + vaul@1.1.2
+    83→2026-10-15T08:41:34.628Z        + z-ai-web-dev-sdk@0.0.18
+    84→2026-10-15T08:41:34.628Z        + zod@4.3.5
+    85→2026-10-15T08:41:34.629Z        + zustand@5.0.10
+    86→2026-10-15T08:41:34.629Z        
+    87→2026-10-15T08:41:34.629Z        827 packages installed [17.52s]
+    88→2026-10-15T08:41:34.898Z        Executing user build command: bun run build
+    89→2026-10-15T08:41:34.999Z        $ next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/
+    90→2026-10-15T08:41:36.179Z        ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+    91→2026-10-15T08:41:36.185Z        Attention: Next.js now collects completely anonymous telemetry regarding usage.
+    92→2026-10-15T08:41:36.185Z        This information is used to shape Next.js' roadmap and prioritize features.
+    93→2026-10-15T08:41:36.185Z        You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+    94→2026-10-15T08:41:36.186Z        https://nextjs.org/telemetry
+    95→2026-10-15T08:41:36.186Z        
+    96→2026-10-15T08:41:36.205Z        ▲ Next.js 16.1.3 (Turbopack)
+    97→2026-10-15T08:41:36.205Z        
+    98→2026-10-15T08:41:36.264Z          Creating an optimized production build ...
+    99→2026-10-15T08:41:52.008Z        ✓ Compiled successfully in 15.1s
+   100→2026-10-15T08:41:52.023Z          Skipping validation of types
+   101→2026-10-15T08:41:52.293Z          Collecting page data using 1 worker ...
+   102→2026-10-15T08:41:52.900Z          Generating static pages using 1 worker (0/5) ...
+   103→2026-10-15T08:41:52.918Z          Generating static pages using 1 worker (1/5) 
+   104→2026-10-15T08:41:52.924Z          Generating static pages using 1 worker (2/5) 
+   105→2026-10-15T08:41:53.142Z          Generating static pages using 1 worker (3/5) 
+   106→2026-10-15T08:41:53.143Z        ✓ Generating static pages using 1 worker (5/5) in 243.0ms
+   107→2026-10-15T08:41:53.151Z          Finalizing page optimization ...
+   108→2026-10-15T08:41:53.724Z        
+   109→2026-10-15T08:41:53.727Z        Route (app)
+   110→2026-10-15T08:41:53.727Z        ┌ ○ /
+   111→2026-10-15T08:41:53.727Z        ├ ○ /_not-found
+   112→2026-10-15T08:41:53.728Z        ├ ƒ /api
+   113→2026-10-15T08:41:53.729Z        └ ƒ /api/leads
+   114→2026-10-15T08:41:53.729Z        
+   115→2026-10-15T08:41:53.729Z        
+   116→2026-10-15T08:41:53.730Z        ○  (Static)   prerendered as static content
+   117→2026-10-15T08:41:53.730Z        ƒ  (Dynamic)  server-rendered on demand
+   118→2026-10-15T08:41:53.730Z        
+   119→2026-10-15T08:41:53.790Z        Success: Build command completed
+   120→2026-10-15T08:41:53.972Z        Executing user deploy command: npx wrangler deploy
+   121→2026-10-15T08:41:55.966Z        npm warn exec The following package was not found and will be installed: wrangler@4.151.0
+   122→2026-10-15T08:42:06.297Z        
+   123→2026-10-15T08:42:06.298Z         ⛅️ wrangler 4.151.0
+   124→2026-10-15T08:42:06.298Z        ────────────────────
+   125→2026-10-15T08:42:06.472Z        
+   126→2026-10-15T08:42:06.477Z        Detected Project Settings:
+   127→2026-10-15T08:42:06.477Z         - Worker Name: voltedge-electrical
+   128→2026-10-15T08:42:06.478Z         - Framework: Next.js
+   129→2026-10-15T08:42:06.478Z         - Build Command: bun run build
+   130→2026-10-15T08:42:06.478Z         - Output Directory: .next
+   131→2026-10-15T08:42:06.478Z        
+   132→2026-10-15T08:42:06.478Z        ? Do you want to modify these settings?
+   133→2026-10-15T08:42:06.478Z        🤖 Using fallback value in non-interactive context: no
+   134→2026-10-15T08:42:06.485Z        
+   135→2026-10-15T08:42:06.493Z        📦 Install packages:
+   136→2026-10-15T08:42:06.495Z         - wrangler (devDependency)
+   137→2026-10-15T08:42:06.498Z        
+   138→2026-10-15T08:42:06.498Z        📝 Update package.json scripts:
+   139→2026-10-15T08:42:06.498Z         - "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+   140→2026-10-15T08:42:06.498Z         - "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
+   141→2026-10-15T08:42:06.498Z        
+   142→2026-10-15T08:42:06.498Z        📄 Create wrangler.jsonc:
+   143→2026-10-15T08:42:06.498Z          {
+   144→2026-10-15T08:42:06.499Z            "$schema": "node_modules/wrangler/config-schema.json",
+   145→2026-10-15T08:42:06.499Z            "name": "voltedge-electrical",
+   146→2026-10-15T08:42:06.499Z            "compatibility_date": "2026-10-12",
+   147→2026-10-15T08:42:06.499Z            "observability": {
+   148→2026-10-15T08:42:06.499Z              "enabled": true
+   149→2026-10-15T08:42:06.499Z            }
+   150→2026-10-15T08:42:06.500Z          }
+   151→2026-10-15T08:42:06.500Z        
+   152→2026-10-15T08:42:06.500Z        🛠️  Configuring project for Next.js with OpenNext by running `@opennextjs/cloudflare migrate`
+   153→2026-10-15T08:42:06.500Z        
+   154→2026-10-15T08:42:06.504Z        ? Proceed with setup?
+   155→2026-10-15T08:42:06.505Z        🤖 Using fallback value in non-interactive context: yes
+   156→2026-10-15T08:42:09.857Z        Resolving dependencies
+   157→2026-10-15T08:42:15.729Z        Resolved, downloaded and extracted [1222]
+   158→2026-10-15T08:42:16.815Z        Saved lockfile
+   159→2026-10-15T08:42:20.334Z        
+   160→2026-10-15T08:42:20.334Z        ┌───────────────────────────────┐
+   161→2026-10-15T08:42:20.336Z        │ OpenNext — Cloudflare migrate │
+   162→2026-10-15T08:42:20.336Z        └───────────────────────────────┘
+   163→2026-10-15T08:42:20.336Z        
+   164→2026-10-15T08:42:20.337Z        🚀 Setting up the OpenNext Cloudflare adapter...
+   165→2026-10-15T08:42:20.337Z        
+   166→2026-10-15T08:42:20.346Z        ⚙️  Installing dependencies...
+   167→2026-10-15T08:42:20.347Z        
+   168→2026-10-15T08:42:20.359Z        bun add v1.2.15 (df017990)
+   169→2026-10-15T08:42:20.373Z        Resolving dependencies
+   170→2026-10-15T08:42:20.884Z        Resolved, downloaded and extracted [473]
+   171→2026-10-15T08:42:20.884Z        warn: incorrect peer dependency "next@16.1.3"
+   172→2026-10-15T08:42:20.885Z        
+   173→2026-10-15T08:42:20.885Z        warn: incorrect peer dependency "next@16.1.3"
+   174→2026-10-15T08:42:26.312Z        Saved lockfile
+   175→2026-10-15T08:42:26.313Z        
+   176→2026-10-15T08:42:26.313Z        + @tailwindcss/postcss@4.1.18
+   177→2026-10-15T08:42:26.314Z        + @types/react@19.2.8
+   178→2026-10-15T08:42:26.314Z        + @types/react-dom@19.2.3
+   179→2026-10-15T08:42:26.314Z        + bun-types@1.3.6
+   180→2026-10-15T08:42:26.314Z        + eslint@9.39.2
+   181→2026-10-15T08:42:26.314Z        + eslint-config-next@16.1.3
+   182→2026-10-15T08:42:26.314Z        + tailwindcss@4.1.18
+   183→2026-10-15T08:42:26.314Z        + tw-animate-css@1.4.0
+   184→2026-10-15T08:42:26.314Z        + typescript@5.9.3
+   185→2026-10-15T08:42:26.314Z        + wrangler@4.151.0
+   186→2026-10-15T08:42:26.315Z        + @dnd-kit/core@6.3.1
+   187→2026-10-15T08:42:26.315Z        + @dnd-kit/sortable@10.0.0
+   188→2026-10-15T08:42:26.315Z        + @dnd-kit/utilities@3.2.2
+   189→2026-10-15T08:42:26.315Z        + @hookform/resolvers@5.2.2
+   190→2026-10-15T08:42:26.315Z        + @mdxeditor/editor@3.52.3
+   191→2026-10-15T08:42:26.315Z        + @prisma/client@6.19.2
+   192→2026-10-15T08:42:26.315Z        + @radix-ui/react-accordion@1.2.12
+   193→2026-10-15T08:42:26.315Z        + @radix-ui/react-alert-dialog@1.1.15
+   194→2026-10-15T08:42:26.315Z        + @radix-ui/react-aspect-ratio@1.1.8
+   195→2026-10-15T08:42:26.315Z        + @radix-ui/react-avatar@1.1.11
+   196→2026-10-15T08:42:26.316Z        + @radix-ui/react-checkbox@1.3.3
+   197→2026-10-15T08:42:26.316Z        + @radix-ui/react-collapsible@1.1.12
+   198→2026-10-15T08:42:26.316Z        + @radix-ui/react-context-menu@2.2.16
+   199→2026-10-15T08:42:26.316Z        + @radix-ui/react-dialog@1.1.15
+   200→2026-10-15T08:42:26.316Z        + @radix-ui/react-dropdown-menu@2.1.16
+   201→2026-10-15T08:42:26.316Z        + @radix-ui/react-hover-card@1.1.15
+   202→2026-10-15T08:42:26.317Z        + @radix-ui/react-label@2.1.8
+   203→2026-10-15T08:42:26.317Z        + @radix-ui/react-menubar@1.1.16
+   204→2026-10-15T08:42:26.317Z        + @radix-ui/react-navigation-menu@1.2.14
+   205→2026-10-15T08:42:26.317Z        + @radix-ui/react-popover@1.1.15
+   206→2026-10-15T08:42:26.317Z        + @radix-ui/react-progress@1.1.8
+   207→2026-10-15T08:42:26.317Z        + @radix-ui/react-radio-group@1.3.8
+   208→2026-10-15T08:42:26.317Z        + @radix-ui/react-scroll-area@1.2.10
+   209→2026-10-15T08:42:26.317Z        + @radix-ui/react-select@2.2.6
+   210→2026-10-15T08:42:26.317Z        + @radix-ui/react-separator@1.1.8
+   211→2026-10-15T08:42:26.317Z        + @radix-ui/react-slider@1.3.6
+   212→2026-10-15T08:42:26.317Z        + @radix-ui/react-slot@1.2.4
+   213→2026-10-15T08:42:26.318Z        + @radix-ui/react-switch@1.2.6
+   214→2026-10-15T08:42:26.318Z        + @radix-ui/react-tabs@1.1.13
+   215→2026-10-15T08:42:26.318Z        + @radix-ui/react-toast@1.2.15
+   216→2026-10-15T08:42:26.318Z        + @radix-ui/react-toggle@1.1.10
+   217→2026-10-15T08:42:26.318Z        + @radix-ui/react-toggle-group@1.1.11
+   218→2026-10-15T08:42:26.318Z        + @radix-ui/react-tooltip@1.2.8
+   219→2026-10-15T08:42:26.318Z        + @reactuses/core@6.1.9
+   220→2026-10-15T08:42:26.318Z        + @tanstack/react-query@5.90.19
+   221→2026-10-15T08:42:26.319Z        + @tanstack/react-table@8.21.3
+   222→2026-10-15T08:42:26.319Z        + class-variance-authority@0.7.1
+   223→2026-10-15T08:42:26.319Z        + clsx@2.1.1
+   224→2026-10-15T08:42:26.319Z        + cmdk@1.1.1
+   225→2026-10-15T08:42:26.319Z        + date-fns@4.1.0
+   226→2026-10-15T08:42:26.319Z        + embla-carousel-react@8.6.0
+   227→2026-10-15T08:42:26.319Z        + framer-motion@12.26.2
+   228→2026-10-15T08:42:26.319Z        + input-otp@1.4.2
+   229→2026-10-15T08:42:26.321Z        + lucide-react@0.525.0
+   230→2026-10-15T08:42:26.321Z        + next@16.1.3
+   231→2026-10-15T08:42:26.321Z        + next-auth@4.24.13
+   232→2026-10-15T08:42:26.321Z        + next-intl@4.7.0
+   233→2026-10-15T08:42:26.321Z        + next-themes@0.4.6
+   234→2026-10-15T08:42:26.321Z        + prisma@6.19.2
+   235→2026-10-15T08:42:26.322Z        + react@19.2.3
+   236→2026-10-15T08:42:26.322Z        + react-day-picker@9.13.0
+   237→2026-10-15T08:42:26.322Z        + react-dom@19.2.3
+   238→2026-10-15T08:42:26.322Z        + react-hook-form@7.71.1
+   239→2026-10-15T08:42:26.323Z        + react-markdown@10.1.0
+   240→2026-10-15T08:42:26.323Z        + react-resizable-panels@3.0.6
+   241→2026-10-15T08:42:26.323Z        + react-syntax-highlighter@15.6.6
+   242→2026-10-15T08:42:26.323Z        + recharts@2.15.4
+   243→2026-10-15T08:42:26.323Z        + sharp@0.34.5
+   244→2026-10-15T08:42:26.323Z        + sonner@2.0.7
+   245→2026-10-15T08:42:26.323Z        + tailwind-merge@3.4.0
+   246→2026-10-15T08:42:26.323Z        + tailwindcss-animate@1.0.7
+   247→2026-10-15T08:42:26.323Z        + uuid@11.1.0
+   248→2026-10-15T08:42:26.324Z        + vaul@1.1.2
+   249→2026-10-15T08:42:26.324Z        + z-ai-web-dev-sdk@0.0.18
+   250→2026-10-15T08:42:26.324Z        + zod@4.3.5
+   251→2026-10-15T08:42:26.324Z        + zustand@5.0.10
+   252→2026-10-15T08:42:26.324Z        
+   253→2026-10-15T08:42:26.324Z        installed @opennextjs/cloudflare@1.20.12 with binaries:
+   254→2026-10-15T08:42:26.325Z         - opennextjs-cloudflare
+   255→2026-10-15T08:42:26.325Z        
+   256→2026-10-15T08:42:26.325Z        1087 packages installed [5.96s]
+   257→2026-10-15T08:42:26.363Z        bun add v1.2.15 (df017990)
+   258→2026-10-15T08:42:26.385Z        Resolving dependencies
+   259→2026-10-15T08:42:26.417Z        Resolved, downloaded and extracted [1]
+   260→2026-10-15T08:42:32.180Z        Saved lockfile
+   261→2026-10-15T08:42:32.180Z        
+   262→2026-10-15T08:42:32.180Z        + @tailwindcss/postcss@4.1.18
+   263→2026-10-15T08:42:32.181Z        + @types/react@19.2.8
+   264→2026-10-15T08:42:32.181Z        + @types/react-dom@19.2.3
+   265→2026-10-15T08:42:32.181Z        + bun-types@1.3.6
+   266→2026-10-15T08:42:32.181Z        + eslint@9.39.2
+   267→2026-10-15T08:42:32.181Z        + eslint-config-next@16.1.3
+   268→2026-10-15T08:42:32.181Z        + tailwindcss@4.1.18
+   269→2026-10-15T08:42:32.181Z        + tw-animate-css@1.4.0
+   270→2026-10-15T08:42:32.181Z        + typescript@5.9.3
+   271→2026-10-15T08:42:32.181Z        + @dnd-kit/core@6.3.1
+   272→2026-10-15T08:42:32.181Z        + @dnd-kit/sortable@10.0.0
+   273→2026-10-15T08:42:32.181Z        + @dnd-kit/utilities@3.2.2
+   274→2026-10-15T08:42:32.181Z        + @hookform/resolvers@5.2.2
+   275→2026-10-15T08:42:32.181Z        + @mdxeditor/editor@3.52.3
+   276→2026-10-15T08:42:32.181Z        + @opennextjs/cloudflare@1.20.12
+   277→2026-10-15T08:42:32.181Z        + @prisma/client@6.19.2
+   278→2026-10-15T08:42:32.182Z        + @radix-ui/react-accordion@1.2.12
+   279→2026-10-15T08:42:32.182Z        + @radix-ui/react-alert-dialog@1.1.15
+   280→2026-10-15T08:42:32.182Z        + @radix-ui/react-aspect-ratio@1.1.8
+   281→2026-10-15T08:42:32.182Z        + @radix-ui/react-avatar@1.1.11
+   282→2026-10-15T08:42:32.182Z        + @radix-ui/react-checkbox@1.3.3
+   283→2026-10-15T08:42:32.182Z        + @radix-ui/react-collapsible@1.1.12
+   284→2026-10-15T08:42:32.183Z        + @radix-ui/react-context-menu@2.2.16
+   285→2026-10-15T08:42:32.183Z        + @radix-ui/react-dialog@1.1.15
+   286→2026-10-15T08:42:32.183Z        + @radix-ui/react-dropdown-menu@2.1.16
+   287→2026-10-15T08:42:32.183Z        + @radix-ui/react-hover-card@1.1.15
+   288→2026-10-15T08:42:32.183Z        + @radix-ui/react-label@2.1.8
+   289→2026-10-15T08:42:32.183Z        + @radix-ui/react-menubar@1.1.16
+   290→2026-10-15T08:42:32.183Z        + @radix-ui/react-navigation-menu@1.2.14
+   291→2026-10-15T08:42:32.183Z        + @radix-ui/react-popover@1.1.15
+   292→2026-10-15T08:42:32.183Z        + @radix-ui/react-progress@1.1.8
+   293→2026-10-15T08:42:32.184Z        + @radix-ui/react-radio-group@1.3.8
+   294→2026-10-15T08:42:32.184Z        + @radix-ui/react-scroll-area@1.2.10
+   295→2026-10-15T08:42:32.184Z        + @radix-ui/react-select@2.2.6
+   296→2026-10-15T08:42:32.184Z        + @radix-ui/react-separator@1.1.8
+   297→2026-10-15T08:42:32.184Z        + @radix-ui/react-slider@1.3.6
+   298→2026-10-15T08:42:32.184Z        + @radix-ui/react-slot@1.2.4
+   299→2026-10-15T08:42:32.184Z        + @radix-ui/react-switch@1.2.6
+   300→2026-10-15T08:42:32.185Z        + @radix-ui/react-tabs@1.1.13
+   301→2026-10-15T08:42:32.185Z        + @radix-ui/react-toast@1.2.15
+   302→2026-10-15T08:42:32.185Z        + @radix-ui/react-toggle@1.1.10
+   303→2026-10-15T08:42:32.186Z        + @radix-ui/react-toggle-group@1.1.11
+   304→2026-10-15T08:42:32.187Z        + @radix-ui/react-tooltip@1.2.8
+   305→2026-10-15T08:42:32.187Z        + @reactuses/core@6.1.9
+   306→2026-10-15T08:42:32.187Z        + @tanstack/react-query@5.90.19
+   307→2026-10-15T08:42:32.187Z        + @tanstack/react-table@8.21.3
+   308→2026-10-15T08:42:32.187Z        + class-variance-authority@0.7.1
+   309→2026-10-15T08:42:32.187Z        + clsx@2.1.1
+   310→2026-10-15T08:42:32.187Z        + cmdk@1.1.1
+   311→2026-10-15T08:42:32.188Z        + date-fns@4.1.0
+   312→2026-10-15T08:42:32.188Z        + embla-carousel-react@8.6.0
+   313→2026-10-15T08:42:32.188Z        + framer-motion@12.26.2
+   314→2026-10-15T08:42:32.188Z        + input-otp@1.4.2
+   315→2026-10-15T08:42:32.188Z        + lucide-react@0.525.0
+   316→2026-10-15T08:42:32.188Z        + next@16.1.3
+   317→2026-10-15T08:42:32.189Z        + next-auth@4.24.13
+   318→2026-10-15T08:42:32.189Z        + next-intl@4.7.0
+   319→2026-10-15T08:42:32.189Z        + next-themes@0.4.6
+   320→2026-10-15T08:42:32.189Z        + prisma@6.19.2
+   321→2026-10-15T08:42:32.190Z        + react@19.2.3
+   322→2026-10-15T08:42:32.190Z        + react-day-picker@9.13.0
+   323→2026-10-15T08:42:32.190Z        + react-dom@19.2.3
+   324→2026-10-15T08:42:32.190Z        + react-hook-form@7.71.1
+   325→2026-10-15T08:42:32.190Z        + react-markdown@10.1.0
+   326→2026-10-15T08:42:32.190Z        + react-resizable-panels@3.0.6
+   327→2026-10-15T08:42:32.191Z        + react-syntax-highlighter@15.6.6
+   328→2026-10-15T08:42:32.191Z        + recharts@2.15.4
+   329→2026-10-15T08:42:32.191Z        + sharp@0.34.5
+   330→2026-10-15T08:42:32.191Z        + sonner@2.0.7
+   331→2026-10-15T08:42:32.191Z        + tailwind-merge@3.4.0
+   332→2026-10-15T08:42:32.191Z        + tailwindcss-animate@1.0.7
+   333→2026-10-15T08:42:32.191Z        + uuid@11.1.0
+   334→2026-10-15T08:42:32.192Z        + vaul@1.1.2
+   335→2026-10-15T08:42:32.192Z        + z-ai-web-dev-sdk@0.0.18
+   336→2026-10-15T08:42:32.192Z        + zod@4.3.5
+   337→2026-10-15T08:42:32.192Z        + zustand@5.0.10
+   338→2026-10-15T08:42:32.192Z        
+   339→2026-10-15T08:42:32.193Z        installed wrangler@4.151.0 with binaries:
+   340→2026-10-15T08:42:32.193Z         - wrangler
+   341→2026-10-15T08:42:32.193Z         - wrangler2
+   342→2026-10-15T08:42:32.193Z         - cf-wrangler
+   343→2026-10-15T08:42:32.193Z        
+   344→2026-10-15T08:42:32.193Z        1087 packages installed [5.84s]
+   345→2026-10-15T08:42:32.204Z        ⚙️  Creating wrangler.jsonc...
+   346→2026-10-15T08:42:32.204Z        
+   347→2026-10-15T08:42:34.535Z        WARN Failed to set up cache for your project.
+   348→2026-10-15T08:42:34.536Z        After the migration completes, please manually setup cache in  wrangler.jsonc and open-next.config.ts files (for more details see: https://opennext.js.org/cloudflare/caching).
+   349→2026-10-15T08:42:34.536Z        
+   350→2026-10-15T08:42:34.536Z        ⚙️  Creating open-next.config.ts...
+   351→2026-10-15T08:42:34.536Z        
+   352→2026-10-15T08:42:34.552Z        ⚙️  Creating .dev.vars file...
+   353→2026-10-15T08:42:34.552Z        
+   354→2026-10-15T08:42:34.553Z        ⚙️  Updating public/_headers file...
+   355→2026-10-15T08:42:34.553Z        
+   356→2026-10-15T08:42:34.553Z        ⚙️  Updating package.json scripts...
+   357→2026-10-15T08:42:34.553Z        
+   358→2026-10-15T08:42:34.554Z        ⚙️  Updating .gitignore file...
+   359→2026-10-15T08:42:34.554Z        
+   360→2026-10-15T08:42:34.554Z        ⚙️  Updating Next.js config...
+   361→2026-10-15T08:42:34.555Z        
+   362→2026-10-15T08:42:34.555Z        ⚙️  Checking for edge runtime usage...
+   363→2026-10-15T08:42:34.555Z        
+   364→2026-10-15T08:42:34.558Z        🎉 OpenNext Cloudflare adapter complete!
+   365→2026-10-15T08:42:34.558Z        
+   366→2026-10-15T08:42:34.558Z        Next steps:
+   367→2026-10-15T08:42:34.559Z        - Run: "bun preview" to build and preview your Cloudflare application locally
+   368→2026-10-15T08:42:34.559Z        - Run: "bun deploy" to deploy your application to Cloudflare Workers
+   369→2026-10-15T08:42:34.559Z        - ⚠️  Setup cache, see https://opennext.js.org/cloudflare/caching for more details
+   370→2026-10-15T08:42:34.559Z        
+   371→2026-10-15T08:42:34.615Z        ├ Adding Wrangler files to the .gitignore file
+   372→2026-10-15T08:42:34.616Z        │ updated .gitignore file
+   373→2026-10-15T08:42:34.616Z        │
+   374→2026-10-15T08:42:34.617Z        [build] Running: bunx opennextjs-cloudflare build
+   375→2026-10-15T08:42:37.856Z        [build] 
+   376→2026-10-15T08:42:37.856Z        [build] ┌─────────────────────────────┐
+   377→2026-10-15T08:42:37.857Z        [build] │ OpenNext — Cloudflare build │
+   378→2026-10-15T08:42:37.857Z        [build] └─────────────────────────────┘
+   379→2026-10-15T08:42:37.857Z        [build] 
+   380→2026-10-15T08:42:37.857Z        [build] 
+   381→2026-10-15T08:42:38.041Z        [build] App directory: /opt/buildhome/repo
+   382→2026-10-15T08:42:38.041Z        [build] 
+   383→2026-10-15T08:42:38.042Z        [build] Next.js version : 16.1.3
+   384→2026-10-15T08:42:38.042Z        [build] @opennextjs/cloudflare version: 1.20.12
+   385→2026-10-15T08:42:38.042Z        [build] @opennextjs/aws version: 4.1.11
+   386→2026-10-15T08:42:38.042Z        [build] workerd compatibility_date: 2026-10-12
+   387→2026-10-15T08:42:38.043Z        [build] 
+   388→2026-10-15T08:42:38.043Z        [build] 
+   389→2026-10-15T08:42:38.043Z        [build] ┌─────────────────────────────────┐
+   390→2026-10-15T08:42:38.043Z        [build] │ OpenNext — Building Next.js app │
+   391→2026-10-15T08:42:38.043Z        [build] └─────────────────────────────────┘
+   392→2026-10-15T08:42:38.044Z        [build] 
+   393→2026-10-15T08:42:38.044Z        [build] 
+   394→2026-10-15T08:42:38.057Z        [build] $ next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/
+   395→2026-10-15T08:42:38.058Z        [build] 
+   396→2026-10-15T08:42:40.961Z        [build] Using secrets defined in .dev.vars
+   397→2026-10-15T08:42:40.961Z        [build] 
+   398→2026-10-15T08:42:41.181Z        [build] ▲ Next.js 16.1.3 (Turbopack)
+   399→2026-10-15T08:42:41.181Z        [build] 
+   400→2026-10-15T08:42:41.181Z        [build] 
+   401→2026-10-15T08:42:41.181Z        [build] 
+   402→2026-10-15T08:42:41.427Z        [build]   Creating an optimized production build ...
+   403→2026-10-15T08:42:41.428Z        [build] 
+   404→2026-10-15T08:42:43.929Z        [build] Using secrets defined in .dev.vars
+   405→2026-10-15T08:42:43.930Z        [build] 
+   406→2026-10-15T08:43:04.866Z        [build] ✓ Compiled successfully in 21.0s
+   407→2026-10-15T08:43:04.866Z        [build] 
+   408→2026-10-15T08:43:04.881Z        [build]   Skipping validation of types
+   409→2026-10-15T08:43:04.881Z        [build] 
+   410→2026-10-15T08:43:05.167Z        [build]   Collecting page data using 1 worker ...
+   411→2026-10-15T08:43:05.172Z        [build] 
+   412→2026-10-15T08:43:05.917Z        [build]   Generating static pages using 1 worker (0/5) ...
+   413→2026-10-15T08:43:05.918Z        [build] 
+   414→2026-10-15T08:43:05.954Z        [build]   Generating static pages using 1 worker (1/5) 
+   415→2026-10-15T08:43:05.955Z        [build] 
+   416→2026-10-15T08:43:05.955Z        [build]   Generating static pages using 1 worker (2/5) 
+   417→2026-10-15T08:43:05.955Z        [build] 
+   418→2026-10-15T08:43:06.278Z        [build]   Generating static pages using 1 worker (3/5) 
+   419→2026-10-15T08:43:06.278Z        [build] 
+   420→2026-10-15T08:43:06.283Z        [build] ✓ Generating static pages using 1 worker (5/5) in 371.9ms
+   421→2026-10-15T08:43:06.283Z        [build] 
+   422→2026-10-15T08:43:06.296Z        [build]   Finalizing page optimization ...
+   423→2026-10-15T08:43:06.296Z        [build] 
+   424→2026-10-15T08:43:07.818Z        [build] 
+   425→2026-10-15T08:43:07.819Z        [build] 
+   426→2026-10-15T08:43:07.824Z        [build] Route (app)
+   427→2026-10-15T08:43:07.825Z        [build] ┌ ○ /
+   428→2026-10-15T08:43:07.825Z        [build] ├ ○ /_not-found
+   429→2026-10-15T08:43:07.827Z        [build] ├ ƒ /api
+   430→2026-10-15T08:43:07.827Z        [build] └ ƒ /api/leads
+   431→2026-10-15T08:43:07.827Z        [build] 
+   432→2026-10-15T08:43:07.827Z        [build] 
+   433→2026-10-15T08:43:07.828Z        [build] 
+   434→2026-10-15T08:43:07.828Z        [build] ○  (Static)   prerendered as static content
+   435→2026-10-15T08:43:07.828Z        [build] ƒ  (Dynamic)  server-rendered on demand
+   436→2026-10-15T08:43:07.828Z        [build] 
+   437→2026-10-15T08:43:07.828Z        [build] 
+   438→2026-10-15T08:43:07.966Z        [build] 
+   439→2026-10-15T08:43:07.966Z        [build] ┌──────────────────────────────┐
+   440→2026-10-15T08:43:07.966Z        [build] │ OpenNext — Generating bundle │
+   441→2026-10-15T08:43:07.966Z        [build] └──────────────────────────────┘
+   442→2026-10-15T08:43:07.966Z        [build] 
+   443→2026-10-15T08:43:07.966Z        [build] 
+   444→2026-10-15T08:43:08.080Z        [build] Bundling middleware function...
+   445→2026-10-15T08:43:08.081Z        [build] 
+   446→2026-10-15T08:43:08.165Z        [build] Bundling static assets...
+   447→2026-10-15T08:43:08.165Z        [build] 
+   448→2026-10-15T08:43:08.185Z        [build] Bundling cache assets...
+   449→2026-10-15T08:43:08.185Z        [build] 
+   450→2026-10-15T08:43:08.201Z        [build] Building server function: default...
+   451→2026-10-15T08:43:08.202Z        [build] 
+   452→2026-10-15T08:43:13.529Z        [build] Applying code patches: 4.638s
+   453→2026-10-15T08:43:13.530Z        [build] 
+   454→2026-10-15T08:43:13.943Z        [build] # copyPackageTemplateFiles
+   455→2026-10-15T08:43:13.944Z        [build] 
+   456→2026-10-15T08:43:13.946Z        [build] ⚙️ Bundling the OpenNext server...
+   457→2026-10-15T08:43:13.947Z        [build] 
+   458→2026-10-15T08:43:13.947Z        [build] 
+   459→2026-10-15T08:43:16.858Z        [build] Worker saved in `.open-next/worker.js` 🚀
+   460→2026-10-15T08:43:16.861Z        [build] 
+   461→2026-10-15T08:43:16.863Z        [build] OpenNext build complete.
+   462→2026-10-15T08:43:16.863Z        [build] 
+   463→2026-10-15T08:43:17.079Z        OpenNext project detected, calling `opennextjs-cloudflare deploy`
+   464→2026-10-15T08:43:21.857Z        
+   465→2026-10-15T08:43:21.858Z        ┌──────────────────────────────┐
+   466→2026-10-15T08:43:21.858Z        │ OpenNext — Cloudflare deploy │
+   467→2026-10-15T08:43:21.858Z        └──────────────────────────────┘
+   468→2026-10-15T08:43:21.858Z        
+   469→2026-10-15T08:43:21.906Z        Using secrets defined in .dev.vars
+   470→2026-10-15T08:43:22.564Z        Incremental cache does not need populating
+   471→2026-10-15T08:43:22.564Z        Tag cache does not need populating
+   472→2026-10-15T08:43:24.290Z        
+   473→2026-10-15T08:43:24.290Z         ⛅️ wrangler 4.151.0
+   474→2026-10-15T08:43:24.290Z        ────────────────────
+   475→2026-10-15T08:43:24.306Z        
+   476→2026-10-15T08:43:24.307Z        Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+   477→2026-10-15T08:43:28.974Z        🌀 Building list of assets...
+   478→2026-10-15T08:43:28.982Z        ✨ Read 75 files from the assets directory /opt/buildhome/repo/.open-next/assets
+   479→2026-10-15T08:43:29.037Z        🌀 Starting asset upload...
+   480→2026-10-15T08:43:31.092Z        🌀 Found 68 new or modified static assets to upload. Proceeding with upload...
+   481→2026-10-15T08:43:31.092Z        + /_next/static/tUTANRY-Q2LlCJ5iAqyZB/_clientMiddlewareManifest.json
+   482→2026-10-15T08:43:31.092Z        + /robots.txt
+   483→2026-10-15T08:43:31.092Z        + /logo.svg
+   484→2026-10-15T08:43:31.093Z        + /_next/static/media/2bbd88c7cbebcb5b-s.5dffbad4.woff2
+   485→2026-10-15T08:43:31.093Z        + /_next/static/media/9710cef2a2a6ac70-s.a1099429.woff2
+   486→2026-10-15T08:43:31.093Z        + /_next/static/media/b221c6d9681431a7-s.17142158.woff2
+   487→2026-10-15T08:43:31.093Z        + /_next/static/media/a978fc28c69736ab-s.1914b782.woff2
+   488→2026-10-15T08:43:31.093Z        + /_next/static/media/b524e3bdcc8dfcd3-s.0000e278.woff2
+   489→2026-10-15T08:43:31.094Z        + /_next/static/chunks/turbopack-e7e1a605f4c81164.js
+   490→2026-10-15T08:43:31.094Z        + /_next/static/media/d9b5d46d9a89ffe6-s.p.0855aa53.woff2
+   491→2026-10-15T08:43:31.094Z        + /_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2
+   492→2026-10-15T08:43:31.094Z        + /_next/static/chunks/2f236954d6a65e12.js
+   493→2026-10-15T08:43:31.094Z        + /images/blog-2.jpg
+   494→2026-10-15T08:43:31.094Z        + /images/team-2.jpg
+   495→2026-10-15T08:43:31.095Z        + /images/team-1.jpg
+   496→2026-10-15T08:43:31.095Z        + /images/team-4.jpg
+   497→2026-10-15T08:43:31.095Z        + /images/client-4.jpg
+   498→2026-10-15T08:43:31.096Z        + /images/client-3.jpg
+   499→2026-10-15T08:43:31.096Z        + /images/team-3.jpg
+   500→2026-10-15T08:43:31.096Z        + /images/service-residential.jpg
+   501→2026-10-15T08:43:31.098Z        + /_next/static/chunks/29cc553a73248c69.js
+   502→2026-10-15T08:43:31.098Z        + /images/project-2.jpg
+   503→2026-10-15T08:43:31.098Z        + /images/project-3.jpg
+   504→2026-10-15T08:43:31.099Z        + /BUILD_ID
+   505→2026-10-15T08:43:31.099Z        + /favicon.svg
+   506→2026-10-15T08:43:31.099Z        + /_next/static/chunks/a76e21727cce163b.js
+   507→2026-10-15T08:43:31.099Z        + /_next/static/media/e37557cf0085218d-s.1d7e972f.woff2
+   508→2026-10-15T08:43:31.099Z        + /_next/static/media/742f0fcf9aa5cfe6-s.b3c57c2c.woff2
+   509→2026-10-15T08:43:31.100Z        + /_next/static/chunks/6cf21fadd8d138a8.css
+   510→2026-10-15T08:43:31.100Z        + /_next/static/media/146a3e5eadafdf83-s.3716a6ec.woff2
+   511→2026-10-15T08:43:31.100Z        + /_next/static/media/7993b8d2abb72fea-s.fcc3856b.woff2
+   512→2026-10-15T08:43:31.100Z        + /_next/static/media/612838607db3d51d-s.p.7fc7e6d5.woff2
+   513→2026-10-15T08:43:31.100Z        + /_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2
+   514→2026-10-15T08:43:31.101Z        + /_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2
+   515→2026-10-15T08:43:31.101Z        + /_next/static/chunks/27749841b463623e.js
+   516→2026-10-15T08:43:31.101Z        + /images/service-banner.jpg
+   517→2026-10-15T08:43:31.101Z        + /images/hero-2.jpg
+   518→2026-10-15T08:43:31.101Z        + /images/client-1.jpg
+   519→2026-10-15T08:43:31.101Z        + /images/blog-1.jpg
+   520→2026-10-15T08:43:31.101Z        + /_next/static/chunks/a6dad97d9634a72d.js
+   521→2026-10-15T08:43:31.101Z        + /_next/static/chunks/a6dad97d9634a72d.js.map
+   522→2026-10-15T08:43:31.101Z        + /_next/static/chunks/7dbcfb899f7266af.css
+   523→2026-10-15T08:43:31.102Z        + /images/hero-3.jpg
+   524→2026-10-15T08:43:31.103Z        + /images/hero-1.jpg
+   525→2026-10-15T08:43:31.103Z        + /_next/static/chunks/1ffbf55f7c9df001.js
+   526→2026-10-15T08:43:31.103Z        + /images/service-industrial.jpg
+   527→2026-10-15T08:43:31.103Z        + /_next/static/tUTANRY-Q2LlCJ5iAqyZB/_ssgManifest.js
+   528→2026-10-15T08:43:31.103Z        + /_next/static/tUTANRY-Q2LlCJ5iAqyZB/_buildManifest.js
+   529→2026-10-15T08:43:31.104Z        + /images/test_slide1.png
+   530→2026-10-15T08:43:31.104Z        + /_next/static/media/31e5e20239562b7a-s.680bcb0d.woff2
+   531→2026-10-15T08:43:31.104Z        + /_next/static/media/f1c5314e24238cfd-s.569f6bbe.woff2
+   532→2026-10-15T08:43:31.104Z        + /_next/static/media/e3c10b17cdb86a23-s.9c849131.woff2
+   533→2026-10-15T08:43:31.105Z        + /_next/static/media/9a8b04342f903b9d-s.b6a2e261.woff2
+   534→2026-10-15T08:43:31.105Z        + /_next/static/media/af7efeee822b8a1b-s.a9774d78.woff2
+   535→2026-10-15T08:43:31.105Z        + /_next/static/media/303804218d80822e-s.p.9b40bd6c.woff2
+   536→2026-10-15T08:43:31.105Z        + /_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2
+   537→2026-10-15T08:43:31.105Z        + /_next/static/chunks/c39637bc9d8cb116.js
+   538→2026-10-15T08:43:31.105Z        + /images/cta-bg.jpg
+   539→2026-10-15T08:43:31.105Z        + /images/service-commercial.jpg
+   540→2026-10-15T08:43:31.105Z        + /images/project-5.jpg
+   541→2026-10-15T08:43:31.105Z        + /images/about-main.jpg
+   542→2026-10-15T08:43:31.105Z        + /images/blog-3.jpg
+   543→2026-10-15T08:43:31.106Z        + /images/project-4.jpg
+   544→2026-10-15T08:43:31.106Z        + /images/client-2.jpg
+   545→2026-10-15T08:43:31.106Z        + /images/about-small.jpg
+   546→2026-10-15T08:43:31.106Z        + /images/project-6.jpg
+   547→2026-10-15T08:43:31.106Z        + /images/project-1.jpg
+   548→2026-10-15T08:43:31.106Z        + /_next/static/chunks/771dedee3f5e1621.js
+   549→2026-10-15T08:43:34.063Z        Uploaded 23 of 68 assets
+   550→2026-10-15T08:43:34.305Z        Uploaded 45 of 68 assets
+   551→2026-10-15T08:43:34.470Z        Uploaded 68 of 68 assets
+   552→2026-10-15T08:43:34.471Z        ✨ Success! Uploaded 68 files (3.37 sec)
+   553→2026-10-15T08:43:34.472Z        
+   554→2026-10-15T08:43:34.844Z        Total Upload: 6672.13 KiB / gzip: 1803.75 KiB
+   555→2026-10-15T08:43:39.084Z        Your Worker has access to the following bindings:
+   556→2026-10-15T08:43:39.084Z        Binding                                                    Resource      
+   557→2026-10-15T08:43:39.085Z        env.WORKER_SELF_REFERENCE (nextjs-tailwind-shadcn-ts)      Worker        
+   558→2026-10-15T08:43:39.085Z        env.IMAGES                                                 Images        
+   559→2026-10-15T08:43:39.085Z        env.ASSETS                                                 Assets        
+   560→2026-10-15T08:43:39.085Z        
+   561→2026-10-15T08:43:39.095Z        
+   562→2026-10-15T08:43:39.275Z        ✘ [ERROR] A request to the Cloudflare API (/accounts/172e2c6643feaf01eba33f071a634696/workers/scripts/voltedge-electrical/versions) failed.
+   563→2026-10-15T08:43:39.276Z        
+   564→2026-10-15T08:43:39.276Z          Service binding 'WORKER_SELF_REFERENCE' references Worker 'nextjs-tailwind-shadcn-ts' which was not found. Verify the Worker exists in your account and that the service name in your configuration is correct. [code: 10143]
+   565→2026-10-15T08:43:39.276Z          To learn more about this error, visit: https://developers.cloudflare.com/workers/configuration/bindings/about-service-bindings/
+   566→2026-10-15T08:43:39.276Z        
+   567→2026-10-15T08:43:39.276Z          
+   568→2026-10-15T08:43:39.276Z          If you think this is a bug, please open an issue at: https://github.com/cloudflare/workers-sdk/issues/new/choose
+   569→2026-10-15T08:43:39.276Z        
+   570→2026-10-15T08:43:39.276Z        
+   571→2026-10-15T08:43:39.276Z        🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2026-10-15_08-43-23_801.log"
+   572→2026-10-15T08:43:39.277Z        ERROR Wrangler deploy command failed:
+   573→2026-10-15T08:43:39.277Z        ✘ [ERROR] A request to the Cloudflare API (/accounts/172e2c6643feaf01eba33f071a634696/workers/scripts/voltedge-electrical/versions) failed.
+   574→2026-10-15T08:43:39.277Z        
+   575→2026-10-15T08:43:39.277Z          Service binding 'WORKER_SELF_REFERENCE' references Worker 'nextjs-tailwind-shadcn-ts' which was not found. Verify the Worker exists in your account and that the service name in your configuration is correct. [code: 10143]
+   576→2026-10-15T08:43:39.277Z          To learn more about this error, visit: https://developers.cloudflare.com/workers/configuration/bindings/about-service-bindings/
+   577→2026-10-15T08:43:39.277Z        
+   578→2026-10-15T08:43:39.277Z          
+   579→2026-10-15T08:43:39.277Z          If you think this is a bug, please open an issue at: https://github.com/cloudflare/workers-sdk/issues/new/choose
+   580→2026-10-15T08:43:39.277Z        
+   581→2026-10-15T08:43:39.279Z        
+   582→2026-10-15T08:43:39.280Z        🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2026-10-15_08-43-23_801.log"
+   583→2026-10-15T08:43:39.280Z        
+   584→2026-10-15T08:43:39.413Z        
+   585→2026-10-15T08:43:39.500Z        ✘ [ERROR] 
+   586→2026-10-15T08:43:39.501Z        
+   587→2026-10-15T08:43:39.502Z        
+   588→2026-10-15T08:43:39.502Z        If you think this is a bug then please create an issue at https://github.com/cloudflare/workers-sdk/issues/new/choose
+   589→2026-10-15T08:43:39.535Z        🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2026-10-15_08-42-05_808.log"
+   590→2026-10-15T08:43:39.767Z        Failed: error occurred while running deploy command
