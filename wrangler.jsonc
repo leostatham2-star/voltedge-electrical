@@ -1,11 +1,19 @@
-// Deploys the static site (./out) to Cloudflare as a Workers static-assets project.
-// Build first with: npm run build:static   then deploy with: npx wrangler deploy
+// Cloudflare Worker config for the OpenNext build.
+// CI (framework preset Next.js) runs: @opennextjs/cloudflare build + deploy
+// Manual equivalent: npx @opennextjs/cloudflare build && npx wrangler deploy
+// NOTE: the worker name MUST stay "voltedge-electrical" so it matches the
+// Cloudflare project; a mismatch breaks deploys with error 10143.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "voltedge-electrical",
+  "main": ".open-next/worker.js",
   "compatibility_date": "2026-10-12",
+  "compatibility_flags": ["nodejs_compat"],
   "assets": {
-    "directory": "./out",
-    "not_found_handling": "single-page-application"
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "images": {
+    "binding": "IMAGES"
   }
 }

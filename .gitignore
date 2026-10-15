@@ -62,3 +62,8 @@ Caddyfile
 /examples/
 /mini-services/
 /tests/
+
+# cloudflare / opennext
+/.open-next/
+/.wrangler/
+/.dev.vars

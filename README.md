@@ -35,30 +35,23 @@ The database is created and migrated automatically in the sandbox. To push the P
 npm run db:push
 ```
 
-## First deploy to Cloudflare
+## Deploying to Cloudflare
 
-1. Push this repository to GitHub (see the next section).
-2. In Cloudflare, go to **Workers & Pages > Create > Import an existing Git repository** and pick the repo.
-3. In the build settings, set the **framework preset to None** first, then:
+This repository ships with everything Cloudflare needs. It deploys as a Cloudflare Worker built by the OpenNext adapter, using the `wrangler.jsonc` and `open-next.config.ts` in the repo root.
 
-   | Setting | Value |
-   |---------|-------|
-   | Framework preset | None |
-   | Build command | `npm run build:static` |
-   | Deploy command | `npx wrangler deploy` |
+**Existing Cloudflare project (Git connected):** no dashboard changes are needed. The framework preset can stay on Next.js. Every push to `main` builds and deploys automatically.
 
-   Leave the default install command as is. Do not pick the Next.js preset: that route tries to run the whole app as a Cloudflare Worker and fails (see troubleshooting below).
-4. Deploy. Every push to the main branch now redeploys the site automatically.
+**Deploying by hand:**
 
-The deploy reads `wrangler.jsonc` from the repo, which serves the `out/` folder as static assets with single page application fallback. Nothing server side runs on Cloudflare, and the forms fall back to a prefilled email, so no database or bindings are needed.
+```bash
+npx @opennextjs/cloudflare build && npx wrangler deploy
+```
+
+The worker name in `wrangler.jsonc` must match the Cloudflare project name (`voltedge-electrical`). A mismatch fails deploys with error 10143, because the OpenNext runtime adds a self reference service binding under that name.
+
+On Cloudflare there is no SQLite, so `/api/leads` answers with an error and the contact and appointment forms fall back to opening a prefilled email instead. Nothing else about the site depends on the server.
 
 After the first deploy, add your custom domain under the project's **Domains & routes** settings. Cloudflare handles the SSL certificate.
-
-## Troubleshooting deploys
-
-**Error 10143, "Service binding 'WORKER_SELF_REFERENCE' references Worker ... which was not found"**
-
-This happens when the framework preset is left on Next.js. Cloudflare then runs the OpenNext adapter, which generates a Worker config named after the package (`nextjs-tailwind-shadcn-ts`) while the actual project is named `voltedge-electrical`, so the deploy is rejected. The build itself succeeds, which makes this extra confusing. Fix: open the project's **Settings > Build > Build configuration**, change the framework preset to None, set the build command to `npm run build:static` and the deploy command to `npx wrangler deploy`, then retry the deployment. This repo already contains the correct `wrangler.jsonc`, so no other changes are needed.
 
 ## Pushing this repository to GitHub
 
