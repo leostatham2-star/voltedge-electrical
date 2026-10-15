@@ -1,6 +1,0 @@
-[
-  {"name": "team-2.jpg", "size": "864x1152", "skipIfExists": false, "prompt": "photorealistic portrait of a confident woman electrician in her late 20s wearing a navy blue work uniform with reflective strips, standing in a modern electrical room, warm smile, professional headshot photography"},
-  {"name": "team-3.jpg", "size": "864x1152", "skipIfExists": false, "prompt": "photorealistic portrait of a senior male master electrician in his 50s with gray beard wearing a navy blue work shirt and cap, arms crossed, standing in an industrial workshop, friendly expression, professional headshot photography"},
-  {"name": "team-4.jpg", "size": "864x1152", "skipIfExists": false, "prompt": "photorealistic portrait of a young male apprentice electrician in his early 20s wearing a navy blue work uniform and yellow hard hat, holding a cordless drill, standing on a construction site, cheerful smile, professional headshot photography"},
-  {"name": "client-2.jpg", "size": "1024x1024", "skipIfExists": false, "prompt": "photorealistic headshot portrait of a smiling middle aged woman with curly hair standing in her cozy home living room, natural light, casual and friendly, professional photography"}
-]

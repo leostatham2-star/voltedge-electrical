@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { Phone, Mail, MapPin, Clock, CheckCircle2, Loader2, Send } from "lucide-react";
-import { BRAND, FAQS } from "@/lib/site";
+import { BRAND, FAQS, mailtoLead } from "@/lib/site";
 import { PageBanner, SectionHeading, Reveal } from "../shared";
 
 const CONTACT_CARDS = [
@@ -32,7 +32,9 @@ const CONTACT_CARDS = [
 ];
 
 function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "done" | "mailto" | "error"
+  >("idle");
   const formRef = useRef<HTMLFormElement>(null);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -50,7 +52,8 @@ function ContactForm() {
       setStatus("done");
       formRef.current?.reset();
     } catch {
-      setStatus("error");
+      mailtoLead(data, "contact");
+      setStatus("mailto");
     }
   };
 
@@ -71,6 +74,28 @@ function ContactForm() {
           className="mt-6 font-heading text-sm font-semibold uppercase tracking-wider text-brand-600 hover:text-brand-500"
         >
           Send another message
+        </button>
+      </div>
+    );
+  }
+
+  if (status === "mailto") {
+    return (
+      <div className="flex min-h-[420px] flex-col items-center justify-center bg-white p-10 text-center shadow-lg">
+        <Mail className="h-16 w-16 text-brand-500" />
+        <h3 className="mt-6 font-heading text-3xl font-bold text-navy-800">
+          Your email app is opening
+        </h3>
+        <p className="mt-3 max-w-sm text-slate-500">
+          We put your message into a fresh email to {BRAND.email}. Just hit send
+          and it lands in our inbox. Rather talk it through? The office line is
+          {" "}{BRAND.phone}.
+        </p>
+        <button
+          onClick={() => setStatus("idle")}
+          className="mt-6 font-heading text-sm font-semibold uppercase tracking-wider text-brand-600 hover:text-brand-500"
+        >
+          Write a new message
         </button>
       </div>
     );

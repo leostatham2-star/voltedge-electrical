@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   PlugZap, Wrench, ShieldCheck, Cctv, GitCommitVertical, Lightbulb,
   Award, BadgeCheck, Clock, BadgeDollarSign, ArrowRight, Quote,
-  PhoneCall, CalendarCheck, CheckCircle2, Loader2,
+  PhoneCall, CalendarCheck, CheckCircle2, Loader2, Mail,
 } from "lucide-react";
 import {
-  WELCOME_TABS, SERVICES, PROJECTS, WHY_US, TESTIMONIALS, STATS, POSTS, PARTNERS, BRAND,
+  WELCOME_TABS, SERVICES, PROJECTS, WHY_US, TESTIMONIALS, STATS, POSTS, PARTNERS, BRAND, mailtoLead,
 } from "@/lib/site";
 import { Reveal, SectionHeading, BoltBullet } from "./shared";
 import { useNav } from "./nav-context";
@@ -171,7 +171,9 @@ export function ServicesGrid() {
 /* ---------------- Appointment form ---------------- */
 
 function AppointmentForm() {
-  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "done" | "mailto" | "error"
+  >("idle");
   const formRef = useRef<HTMLFormElement>(null);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -189,7 +191,8 @@ function AppointmentForm() {
       setStatus("done");
       formRef.current?.reset();
     } catch {
-      setStatus("error");
+      mailtoLead(data, "appointment");
+      setStatus("mailto");
     }
   };
 
@@ -204,6 +207,28 @@ function AppointmentForm() {
         <p className="mt-3 max-w-sm text-white/70">
           Thanks for reaching out. A coordinator will call you back within one business
           hour to lock in a time.
+        </p>
+        <button
+          onClick={() => setStatus("idle")}
+          className="mt-6 font-heading text-sm font-semibold uppercase tracking-wider text-brand-400 hover:text-brand-500"
+        >
+          Send another request
+        </button>
+      </div>
+    );
+  }
+
+  if (status === "mailto") {
+    return (
+      <div className="flex h-full min-h-[420px] flex-col items-center justify-center bg-navy-800 p-10 text-center">
+        <Mail className="h-16 w-16 text-brand-500" />
+        <h3 className="mt-6 font-heading text-3xl font-bold text-white">
+          Your email app is opening
+        </h3>
+        <p className="mt-3 max-w-sm text-white/70">
+          We drafted the request as an email to {BRAND.email}. Press send and it
+          reaches the office right away. In a hurry? Call {BRAND.phone} and a
+          coordinator will sort you out.
         </p>
         <button
           onClick={() => setStatus("idle")}

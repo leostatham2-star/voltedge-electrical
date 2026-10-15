@@ -413,3 +413,26 @@ export const PARTNERS = [
   "Scioto Electric Supply",
   "Heartland Rentals",
 ];
+
+// If the form API cannot be reached (for example on static hosting), hand the
+// visitor a prefilled email instead of a dead end. Works in every browser.
+export function mailtoLead(
+  data: Record<string, FormDataEntryValue>,
+  source: string
+) {
+  const lines: string[] = [];
+  for (const [key, value] of Object.entries(data)) {
+    if (typeof value === "string" && value.trim()) {
+      const label = key.charAt(0).toUpperCase() + key.slice(1);
+      lines.push(`${label}: ${value.trim()}`);
+    }
+  }
+  const subject =
+    source === "appointment"
+      ? "Appointment request from the website"
+      : "Website message";
+  const body = lines.join("\n\n");
+  window.location.href = `mailto:${BRAND.email}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
+}
