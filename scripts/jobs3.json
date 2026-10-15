@@ -1,0 +1,6 @@
+[
+  {"name": "client-3.jpg", "size": "1024x1024", "skipIfExists": false, "prompt": "photorealistic headshot portrait of a happy older man in his 60s with glasses and gray hair standing outside his suburban home, warm afternoon light, genuine smile, professional photography"},
+  {"name": "client-4.jpg", "size": "1024x1024", "skipIfExists": false, "prompt": "photorealistic headshot portrait of a young business owner man in a casual shirt standing in his coffee shop, friendly confident smile, warm interior background, professional photography"},
+  {"name": "blog-1.jpg", "size": "1344x768", "skipIfExists": false, "prompt": "photorealistic photo of old frayed electrical wiring with cracked insulation inside an old home junction box, warning concept, detailed closeup, moody lighting"},
+  {"name": "blog-2.jpg", "size": "1344x768", "skipIfExists": false, "prompt": "photorealistic photo of a glowing warm LED light bulb held between fingers against dark blurred home interior background, energy saving concept, shallow depth of field"}
+]

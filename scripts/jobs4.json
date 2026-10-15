@@ -1,0 +1,5 @@
+[
+  {"name": "blog-3.jpg", "size": "1344x768", "skipIfExists": false, "prompt": "photorealistic photo of an electrician installing a sleek electric vehicle charging station on a home garage wall, modern EV car nearby, daytime, professional trade photography"},
+  {"name": "cta-bg.jpg", "size": "1440x720", "skipIfExists": false, "prompt": "dark moody photorealistic background of an electrical control room with rows of illuminated circuit breakers and subtle amber glowing indicator lights, deep navy and dark tones with warm yellow accents, wide angle, cinematic"},
+  {"name": "service-banner.jpg", "size": "1440x720", "skipIfExists": false, "prompt": "wide photorealistic photo of a professional electrician in navy uniform and yellow hard hat working inside a bright modern home checking the electrical panel, tool bag beside, clean composition with copy space on left, professional trade photography"}
+]
